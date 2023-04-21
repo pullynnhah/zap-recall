@@ -111,5 +111,6 @@ meter {
 
 body {
   font-family: 'Recursive', sans-serif;
+  color: #333;
 }
 `;
