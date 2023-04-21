@@ -1,3 +1,15 @@
+import { useState } from "react";
+import Home from "./components/Home";
+import Recall from "./components/Recall";
+import styled from "styled-components";
+
 export default function App() {
-  return <h1>ZapRecall</h1>;
+  const [isHome, setIsHome] = useState(true);
+  return <Page>{isHome ? <Home setIsHome={setIsHome} /> : <Recall setIsHome={setIsHome} />}</Page>;
 }
+
+const Page = styled.div`
+  width: 100vw;
+  height: 100vh;
+  background: #fb6b6b;
+`;
