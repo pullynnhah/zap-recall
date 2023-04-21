@@ -1,31 +1,52 @@
+// status: play, playing, grading, graded
 export const DECK = [
   {
-    question: "Como iniciar um repositório git?",
-    answer: "git init"
+    question: "O que é JSX?",
+    answer: "Uma extensão da linguagem JavaScript",
+    status: "play",
+    score: null
   },
   {
-    question:
-      "Em qual arquivo deve-se colocar o nome de pastas/arquivos a serem ignorados pelo git?",
-    answer: ".gitignore"
+    question: "O React é __",
+    answer: "Uma biblioteca JavaScript para construção de interfaces",
+    status: "play",
+    score: null
   },
   {
-    question: "Quais os passos para adicionar mudanças ao repo no GitHub?",
-    answer: "git add <filename><br />git commit -m 'mensagem'<br />git push"
+    question: "Componentes devem iniciar com __",
+    answer: "Letra maiúscula",
+    status: "play",
+    score: null
   },
   {
-    question: "Qual o comando para adicionar um arquivo a área de staging?",
-    answer: "git add <filename>"
+    question: "Podemos colocar __ dentro do JSX",
+    answer: "expressões",
+    status: "play",
+    score: null
   },
   {
-    question: "Qual o commando para commitar as mudanças?",
-    answer: "git commit -m 'mensagem'"
+    question: "O ReactDOM nos ajuda __",
+    answer: "Interagindo com a DOM para colocar componentes React na mesma",
+    status: "play",
+    score: null
   },
   {
-    question: "Como ver o histórico de commits?",
-    answer: "git log"
+    question: "Usamos o npm para __",
+    answer: "Gerenciar os pacotes necessários e suas dependências",
+    status: "play",
+    score: null
   },
   {
-    question: "Como ver a área de staging?",
-    answer: "git status"
+    question: "Usamos props para __",
+    answer: "Passar diferentes informações para componentes",
+    status: "play",
+    score: null
+  },
+  {
+    question: "Usamos estado (state) para __",
+    answer:
+      "Dizer para o React quais informações quando atualizadas devem renderizar a tela novamente",
+    status: "play",
+    score: null
   }
 ];
