@@ -1,16 +1,8 @@
-import { useState } from "react";
 import styled from "styled-components";
-
-import { DECK } from "../../constants/deck";
 
 import Card from "./cards/Card";
 
-export default function Cards() {
-  // status: play, playing, grading, graded
-  // scores: wrong, partial, right
-  const [cards, setCards] = useState(DECK.sort(() => Math.random() - 0.5));
-  const [scores, setScores] = useState([]);
-
+export default function Cards({ cards, setCards, scores, setScores }) {
   function updateCards(index, status, score) {
     if (status === "graded") {
       setCards(cards.toSpliced(index, 1, { ...cards[index], status, score }));
@@ -33,4 +25,5 @@ const Container = styled.div`
   align-items: center;
   justify-content: flex-start;
   gap: 25px;
+  padding-bottom: 200px;
 `;

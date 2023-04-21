@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { COLORS } from "../../../constants/colors";
 
 import arrow from "../../../assets/icons/arrow.svg";
-import Icon from "./card/Icon";
+import Icon from "../Icon";
 
 export default function Card({ id, question, answer, status, score, updateCards }) {
   if (status === "play") {
@@ -86,8 +86,13 @@ const SmallCard = styled.div`
 
 const LargeCard = styled.div`
   width: 299px;
-  height: 131px;
+  min-height: 131px;
   padding: 14px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
 
   position: relative;
 
@@ -97,7 +102,6 @@ const LargeCard = styled.div`
   p {
     font-size: 18px;
     line-height: 22px;
-    color: #333;
   }
 `;
 
@@ -108,10 +112,6 @@ const IconContainer = styled.img`
 `;
 
 const ButtonContainer = styled.div`
-  position: absolute;
-  bottom: 10px;
-  left: 14px;
-  right: 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;
